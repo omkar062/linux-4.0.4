@@ -1105,4 +1105,15 @@ config I2C_OPAL
 	  This driver can also be built as a module. If so, the module will be
 	  called as i2c-opal.
 
+config I2C_SUN7I
+	tristate "SUN7I I2C Controller"
+	depends on ARCH_SUNXI
+	help
+	  If you say yes to this option, support will be included for the
+	  built-in I2C interface.This driver is used for Allwinner SoCs I2C 
+	  controllers.
+
+	  This driver can also be built as a module.  If so, the module
+	  will be called i2c-sun7i.
+
 endmenu
